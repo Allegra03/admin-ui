@@ -40,6 +40,12 @@ const Sidebar = () => {
 			<ShoppingCartRoundedIcon className="icon"/>
 			<span>Orders</span>
 		</li>
+		<Link to="/mylist">
+			<li>
+				<Inventory2RoundedIcon className="icon"/>
+				<span>Categories</span>
+			</li>
+		</Link>
 			<p className="title">USER</p>
 		<li>
 			<AccountCircleRoundedIcon className="icon"/>
