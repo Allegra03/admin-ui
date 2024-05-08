@@ -6,6 +6,7 @@ import Inventory2RoundedIcon from '@mui/icons-material/Inventory2Rounded';
 import ShoppingCartRoundedIcon from '@mui/icons-material/ShoppingCartRounded';
 import AccountCircleRoundedIcon from '@mui/icons-material/AccountCircleRounded';
 import LogoutRoundedIcon from '@mui/icons-material/LogoutRounded';
+import CategoryRoundedIcon from '@mui/icons-material/CategoryRounded';
 
 const Sidebar = () => {
   return (
@@ -42,7 +43,7 @@ const Sidebar = () => {
 		</li>
 		<Link to="/mylist">
 			<li>
-				<Inventory2RoundedIcon className="icon"/>
+				<CategoryRoundedIcon className="icon"/>
 				<span>Categories</span>
 			</li>
 		</Link>
