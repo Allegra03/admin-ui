@@ -51,7 +51,7 @@ const Sidebar = () => {
 			</li>
 		</Link>
 			<p className="title">USER</p>
-		<li>
+		<li data-testid="user">
 			<AccountCircleRoundedIcon className="icon"/>
 			<span>Profile</span>
 		</li>
