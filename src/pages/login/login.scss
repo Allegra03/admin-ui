@@ -1,34 +1,80 @@
-.login{
-    height: 100vh;
+.login {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.5s ease; // added a transition for smooth background color change
+  
+  &.dark {
+    background-color: #111; // dark mode background color
+  }
+
+  form {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    background-color: #f0f0f0; // added a default background color
+    padding: 20px; // added some padding to the form
+    border: 1px solid #ccc; // added a border to the form
+    border-radius: 10px; // added a border radius to the form
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); // added a subtle box shadow
 
-    form{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+    input {
+      width: 200px;
+      height: 30px;
+      margin: 10px;
+      padding: 10px; // added some padding to the input fields
+      border: 1px solid #ccc; // added a border to the input fields
+      border-radius: 5px; // added a border radius to the input fields
+      transition: border-color 0.5s ease; // added a transition for smooth border color change
 
-      input{
-        width: 200px;
-        height: 30px;
-        margin: 10px;
-      }
-
-      button{
-        width: 200px;
-        height: 30px;
-        border: none;
-        background-color: brown;
-        color: white;
-        font-weight: bold;
-        cursor: pointer;
-      }
-
-      span{
-        font-size: 12px;
-        color: red;
-        margin-top: 10px;
+      &.dark {
+        background-color: #333; // dark mode input background color
+        color: #fff; // dark mode input text color
+        border-color: #666; // dark mode input border color
       }
     }
+
+    button.login {
+      width: 200px;
+      height: 30px;
+      border: none;
+      background-color: brown;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.5s ease; // added a transition for smooth background color change
+
+      &.dark {
+        background-color: #888; // dark mode button background color
+      }
+
+      &:hover {
+        background-color: #3e8e41; // added a hover effect
+      }
+    }
+
+    span {
+      font-size: 12px;
+      color: red;
+      margin-top: 10px;
+    }
+  }
+
+  /* Theme toggle button styles */
+  button.theme {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+
+   .colorOption {
+      width: 20px;
+      height: 20px;
+      border-radius: 5px;
+      border: 1px solid #7b3c08;
+      cursor: pointer;
+      margin: 5px;
+    }
+  }
 }

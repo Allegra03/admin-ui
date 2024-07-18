@@ -55,10 +55,13 @@ const Sidebar = () => {
 			<AccountCircleRoundedIcon className="icon"/>
 			<span>Profile</span>
 		</li>
-		<li>
-			<LogoutRoundedIcon className="icon"/>
-			<span>Logout</span>
-		</li>
+		<Link to="/login">
+			<li>
+				<LogoutRoundedIcon className="icon"/>
+				<span>Logout</span>
+			</li>
+		</Link>
+
 		</ul>
 	</div>
 	<div className="bottom">

@@ -39,4 +39,25 @@ export const productColumns = [
     { field: "price", headerName: "Price", width: 70 },
     { field: "category", headerName: "Category", width: 90 },
     { field: "stock", headerName: "Stock", width: 90 } 
+];
+
+export const categoriesColumns = [
+    { field: "id", headerName: "ID", width: 150 },
+    {
+        field: "title",
+        headerName: "Title",
+        width: 170,
+        renderCell: (params) => {
+            return (
+            <div className="cellWithImg">
+                <img className="cellImg" src={params.row.img} alt="image" />
+                {params.row.title}
+            </div>
+            );
+        },
+    }, 
+    { field: "description", headerName: "Description", width: 230 }, 
+    { field: "price", headerName: "Price", width: 70 },
+    { field: "category", headerName: "Category", width: 90 },
+    { field: "stock", headerName: "Stock", width: 90 } 
 ]; 

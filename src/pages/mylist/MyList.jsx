@@ -12,9 +12,10 @@ const MyList = () => {
       <Navbar/>
         <div className="widgets">
           <Widget type="user"/>
-          <Widget type="order"/>
+          <Widget type="products"/>
+          <Widget type="categories"/>
         </div>
-        <div className="datatable">
+        <div className="mydatatable">
             <MyDatatable/>
         </div>
       </div>
